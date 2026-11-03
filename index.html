@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ficha de Textos: Treino de Leitura e Escrita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f8;--grid:#dae2ef;--card:#fff;--ink:#17213a;--mute:#53607b;--line:#c3cde1;--accent:#2848c8;--ok:#1b7f48;--okbg:#e4f5ec;--warn:#a34f00;--chip:#e8eeff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1629;--grid:#1a2440;--card:#172038;--ink:#e8edf8;--mute:#a1adc7;--line:#32406a;--accent:#8ea6ff;--ok:#5fd38d;--okbg:#14352a;--warn:#ffb067;--chip:#23305a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1629;--grid:#1a2440;--card:#172038;--ink:#e8edf8;--mute:#a1adc7;--line:#32406a;--accent:#8ea6ff;--ok:#5fd38d;--okbg:#14352a;--warn:#ffb067;--chip:#23305a;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 5rem)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;font:1.05rem/1.5 "Atkinson Hyperlegible",system-ui,"Segoe UI",Arial,sans-serif;color:var(--ink);background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+main{max-width:42rem;margin:0 auto;padding:0 1rem 3rem}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--card);border-bottom:2px solid var(--accent);margin:0 -1rem 1.25rem;padding:.7rem 1rem}
+.row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.row strong{font-size:1.15rem}
+.bar{height:.6rem;background:var(--chip);border-radius:6px;overflow:hidden;margin-top:.5rem}
+.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .25s}
+h1{font-size:clamp(1.6rem,5vw,2.1rem);line-height:1.15;margin:0 0 .6rem}
+.intro{margin:0 0 1.25rem;color:var(--mute)}
+.intro b{color:var(--ink)}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.1rem .4rem;margin-bottom:1.25rem}
+h2{font-size:1.3rem;margin:0}
+section>p{margin:.2rem 0 1rem;color:var(--mute)}
+.f{margin-bottom:1.4rem}
+label,.lb{display:block;font-weight:700}
+.h{color:var(--mute);font-size:.95rem;margin:.1rem 0 .35rem}
+.rq{margin:.1rem 0 .5rem;padding-left:1.2rem;color:var(--mute);font-size:.95rem}
+.m{display:flex;gap:.5rem;align-items:baseline;flex-wrap:wrap;margin:.15rem 0 .4rem;font-size:.95rem}
+.m code{background:var(--chip);border:1px solid var(--line);border-radius:6px;padding:.1rem .5rem;font:inherit;font-size:1.05rem;letter-spacing:.04em;word-break:break-word}
+.w{margin-top:.5rem}
+.sl{font-size:.95rem;font-weight:700;margin-bottom:.2rem}
+input,select,textarea{width:100%;font:inherit;font-size:1.2rem;padding:.55rem .7rem;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:8px}
+textarea{resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.w.ok input,.w.ok textarea{border-color:var(--ok);background:var(--okbg)}
+.st{min-height:1.4rem;font-size:.95rem;color:var(--warn);margin-top:.25rem}
+.w.ok .st{color:var(--ok);font-weight:700}
+button{font:inherit;font-weight:700;padding:.6rem 1.1rem;border-radius:8px;border:2px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+#done{display:none;border:2px solid var(--ok);background:var(--okbg);border-radius:10px;padding:.8rem 1rem;margin-bottom:1.25rem;font-weight:700}
+.id .esc{font-size:1.3rem;font-weight:700;line-height:1.25;margin:0 0 .6rem;color:var(--ink)}
+.id dl{display:grid;grid-template-columns:max-content 1fr;gap:.15rem .9rem;margin:0 0 1rem}
+.id dt{color:var(--mute)}
+.id dd{margin:0;font-weight:700}
+.id .campos{display:grid;grid-template-columns:2fr 1fr 1fr;gap:.9rem;margin-bottom:.9rem}
+@media (max-width:36rem){.id .campos{grid-template-columns:1fr}}
+@media print{header.top{position:static}#reset{display:none}body{background:none}body::before{display:none}}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<header class="top">
+  <div class="row"><strong id="pts">0 de 100 pontos</strong><span id="lvl">Nível: Iniciando</span></div>
+  <div class="bar" role="progressbar" aria-label="Pontuação" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="fill"></i></div>
+</header>
+<section class="id" aria-label="Identificação">
+  <p class="esc">E.M.E.F. Fausto de Aguiar Cardoso</p>
+  <dl>
+    <dt>Disciplina</dt><dd>Informática</dd>
+    <dt>Professor</dt><dd>Salatiel Batista Santos</dd>
+    <dt>Atividade</dt><dd>Treino de leitura e escrita de textos</dd>
+  </dl>
+  <div class="campos">
+    <div><label for="aluno">Nome do aluno</label><input id="aluno" type="text" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off"></div>
+    <div><label for="turma">Turma</label><select id="turma"><option value="">Escolha</option><option>6º A</option><option>6º B</option><option>7º A</option><option>7º B</option><option>8º A</option><option>8º B</option><option>9º A</option><option>9º B</option></select></div>
+    <div><label for="data">Data</label><input id="data" type="date"></div>
+  </div>
+</section>
+<h1>Ficha de Textos: Treino de Leitura e Escrita</h1>
+<p class="intro">Leia cada texto em voz baixa, digite sem olhar para o teclado e confira. O campo fica verde quando estiver certo, e a ficha vale 100 pontos. Só o seu nome e a sua turma são verdadeiros: nos textos que você escrever, <b>use nomes e dados inventados</b>. Nada do que você digita sai deste computador.</p>
+<div id="app"></div>
+<div id="done">Parabéns! Você completou os 100 pontos. Mostre a tela ao professor.</div>
+<button id="reset" type="button">Limpar tudo e recomeçar</button>
+</main>
+<script>
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const T=t=>v=>{if(v===t)return'';if(v.length>t.length&&v.startsWith(t))return'Tem caracteres a mais no final.';if(t.startsWith(v))return'Continue digitando…';let i=0;while(v[i]===t[i])i++;return'Confira o caractere '+(i+1)+': você digitou “'+v[i]+'” e o certo é “'+t[i]+'”.'};
+const SN=v=>(v.match(/[.!?]+(\s|$)/g)||[]).length;
+const ans=re=>v=>!/^\p{Lu}/u.test(v.trim())||!/[.!?]$/.test(v.trim())?'Escreva uma frase completa: comece com maiúscula e termine com ponto.':re.test(v)?'':'A resposta não traz a informação certa. Releia o texto.';
+const HR=/\d{1,2}(h\d{0,2}|:\d{2})/;
+const cp=(l,t)=>({l,m:t,i:[{max:5,t,rows:t.length>90?4:0}]});
+const q2=(l,t,q,re)=>({l,m:t,i:[{lab:'Copie o texto:',max:2,t,rows:2},{lab:'Responda: '+q,max:3,rule:ans(re),rows:2}]});
+const w4=(l,h,reqs)=>({l,h,reqs:reqs.map(r=>r[0]),i:[{max:5,reqs,rows:5}]});
+const S=[
+{t:'Posto 1: Ler e copiar frases',d:'Leia, digite igualzinho e confira cada palavra e cada sinal.',f:[
+ cp('Frase 1','A professora disse: "Leiam com calma e digitem sem pressa."'),
+ cp('Frase 2','Meu irmão comprou maçãs, açúcar e pão na padaria da esquina.'),
+ cp('Frase 3','Você já viu um robô de verdade? Que incrível!'),
+ cp('Frase 4','Guarda-chuva, bem-vindo e segunda-feira são palavras com hífen.'),
+ cp('Parágrafo','Ler com atenção é o primeiro passo para escrever bem. Antes de digitar, observe cada palavra e cada sinal. Depois, confira o que você escreveu.')]},
+{t:'Posto 2: Ler e responder com números',d:'Copie o texto e responda à pergunta com uma frase completa, com o número.',f:[
+ q2('Texto 1','A turma do 7º ano tem 28 alunos. Hoje faltaram 3.','quantos alunos vieram hoje?',/\b25\b/),
+ q2('Texto 2','A aula de Informática começa às 7h30 e termina às 8h20.','quanto tempo dura a aula?',/\b50 ?minutos\b/i),
+ q2('Texto 3','Um caderno custa R$ 12,50 e uma caneta custa R$ 3,00.','quanto custam os dois juntos?',/15,50/),
+ q2('Texto 4','O passeio será em 20/11/2026, às 8h, saindo da escola.','qual é o dia e a hora do passeio?',/(?=.*20\/11\/2026)(?=.*\b8h\b)/),
+ q2('Texto 5','A mesa tem 1,20 m de comprimento e 60 cm de largura.','qual é a largura da mesa?',/\b60 ?cm\b/)]},
+{t:'Posto 3: Textos reais com símbolos',d:'Mensagens, avisos e anúncios como aparecem no dia a dia.',f:[
+ cp('Mensagem','Oi, Ana! Amanhã tem prova às 7h30 (não esqueça o lápis!). Até lá!'),
+ cp('Contato','Contato: secretaria@escola.com.br ou (79) 3000-0000.'),
+ cp('Anúncio','Promoção! Caderno por R$ 9,90 (desconto de 20%) - só até sexta-feira.'),
+ cp('Rede social','Fotos da feira: #FeiraDeCiencias2026 @nossa.escola'),
+ cp('Receita','Receita: 2 xícaras de farinha + 1 ovo + 1/2 copo de leite = 1 bolo simples!')]},
+{t:'Posto 4: Escrever do zero',d:'Agora o texto é seu. Cada item que faltar tira 1 ponto do passo.',f:[
+ w4('Bilhete para um colega','Escreva com dados inventados.',[['nome do colega com inicial maiúscula',v=>/\p{Lu}\p{Ll}+/u.test(v)],['pelo menos duas frases',v=>SN(v)>=2],['um horário, como 7h30',v=>HR.test(v)],['ponto final',v=>/\.(\s*)$|\.\s/.test(v)],['uma exclamação',v=>/!/.test(v)]]),
+ w4('Aviso para o mural','Use uma linha para cada informação.',[['título na primeira linha',v=>v.trim().split('\n').filter(Boolean).length>=2],['data, como 00/00/0000',v=>/\d{2}\/\d{2}\/\d{4}/.test(v)],['horário, como 8h',v=>HR.test(v)],['a palavra Local',v=>/local/i.test(v)],['pontuação no final',v=>/[.!?]\s*$/.test(v)]]),
+ w4('E-mail curto','Escreva para um colega inventado.',[['Assunto:',v=>/assunto:/i.test(v)],['saudação (Olá, Oi, Prezado…)',v=>/(ol[áa]|oi\b|prezad|querid)/i.test(v)],['pelo menos duas frases',v=>SN(v)>=2],['despedida (Atenciosamente, Abraço…)',v=>/(atenciosamente|abra[çc]o|at[ée] logo|obrigad)/i.test(v)],['assinatura em uma linha própria',v=>{const L=v.trim().split('\n').filter(Boolean);return L.length>=4&&L[L.length-1].length<30&&/\p{L}/u.test(L[L.length-1])}]]),
+ w4('Anúncio de venda','Invente o produto e o contato.',[['pelo menos 5 palavras',v=>v.trim().split(/\s+/).length>=5],['preço com R$',v=>/R\$ ?\d/.test(v)],['desconto com %',v=>/\d+ ?%/.test(v)],['contato com @ ou telefone',v=>/@|\(\d{2}\) ?\d/.test(v)],['uma exclamação',v=>/!/.test(v)]]),
+ w4('Parágrafo sobre o seu dia','Conte como foi o seu dia.',[['quatro frases',v=>SN(v)>=4],['dois números',v=>(v.match(/\d+/g)||[]).length>=2],['uma interrogação ou exclamação',v=>/[?!]/.test(v)],['uma palavra com acento',v=>/[áéíóúâêôãõà]/i.test(v)],['parênteses ou aspas',v=>/[()"“”]/.test(v)]])]}
+];
+function ev(s,v){if(!v)return{p:0,msg:''};if(s.reqs){const miss=s.reqs.filter(r=>!r[1](v)).map(r=>r[0]);return{p:s.max-miss.length,msg:miss.length?'Falta: '+miss.join('; ')+'.':''}}const m=(s.t?T(s.t):s.rule)(v);return{p:m===''?s.max:0,msg:m}}
+const app=document.getElementById('app'),all=[];
+S.forEach((s,si)=>{const sec=el('section');sec.append(el('h2',0,s.t),el('p',0,s.d));
+ s.f.forEach((f,fi)=>{const box=el('div','f');box.append(el('div','lb',f.l));
+  if(f.h)box.append(el('div','h',f.h));
+  if(f.reqs){box.append(el('div','h','O texto precisa ter:'));const u=el('ul','rq');f.reqs.forEach(r=>u.append(el('li',0,r)));box.append(u)}
+  if(f.m){const m=el('div','m');m.append(el('span',0,'Digite:'),el('code',0,f.m));box.append(m)}
+  f.i.forEach((s2,k)=>{const w=el('div','w');if(s2.lab)w.append(el('div','sl',s2.lab));
+   const inp=el(s2.rows?'textarea':'input');if(s2.rows)inp.rows=s2.rows;else inp.type='text';
+   inp.id='c'+si+'_'+fi+'_'+k;inp.setAttribute('aria-label',f.l+(s2.lab?': '+s2.lab:''));inp.autocomplete='off';inp.spellcheck=false;inp.setAttribute('autocapitalize','off');inp.setAttribute('autocorrect','off');
+   const st=el('div','st');st.setAttribute('aria-live','polite');w.append(inp,st);box.append(w);
+   inp.addEventListener('input',update);all.push({s:s2,inp,st,w})});
+  sec.append(box)});
+ app.append(sec)});
+function update(){let n=0;all.forEach(o=>{const r=ev(o.s,o.inp.value),full=r.p===o.s.max;n+=r.p;o.w.classList.toggle('ok',full);
+  o.st.textContent=!o.inp.value?'':full?'Certo! +'+o.s.max+' pontos':r.msg+(o.s.reqs?' ('+r.p+' de '+o.s.max+')':'')});
+ document.getElementById('pts').textContent=n+' de 100 pontos';
+ document.getElementById('lvl').textContent='Nível: '+(n>=80?'Dominando':n>=50?'Desenvolvendo':'Iniciando');
+ document.getElementById('fill').style.width=n+'%';document.querySelector('.bar').setAttribute('aria-valuenow',n);
+ document.getElementById('done').style.display=n===100?'block':'none'}
+document.getElementById('reset').addEventListener('click',()=>{all.forEach(o=>o.inp.value='');update();window.scrollTo({top:0})});
+const hoje=new Date();document.getElementById('data').value=hoje.getFullYear()+'-'+String(hoje.getMonth()+1).padStart(2,'0')+'-'+String(hoje.getDate()).padStart(2,'0');
+</script>
+</body>
+</html>
